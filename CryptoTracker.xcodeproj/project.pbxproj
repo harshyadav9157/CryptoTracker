@@ -13,6 +13,8 @@
 		B0C6387726543A81002421C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C6387526543A81002421C1 /* Main.storyboard */; };
 		B0C6387926543A85002421C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C6387826543A85002421C1 /* Assets.xcassets */; };
 		B0C6387C26543A85002421C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C6387A26543A85002421C1 /* LaunchScreen.storyboard */; };
+		B0C6388526543C18002421C1 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6388426543C18002421C1 /* Struct.swift */; };
+		B0C6388D26544D2A002421C1 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6388C26544D2A002421C1 /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B0C6387826543A85002421C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0C6387B26543A85002421C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0C6387D26543A85002421C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C6388426543C18002421C1 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
+		B0C6388C26544D2A002421C1 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		B0C6386E26543A81002421C1 /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				B0C6388C26544D2A002421C1 /* CryptoTableViewCell.swift */,
 				B0C6386F26543A81002421C1 /* AppDelegate.swift */,
 				B0C6387126543A81002421C1 /* SceneDelegate.swift */,
-				B0C6387326543A81002421C1 /* ViewController.swift */,
-				B0C6387526543A81002421C1 /* Main.storyboard */,
+				B0C6389026545F9D002421C1 /* Model */,
+				B0C6389226545FE2002421C1 /* View */,
+				B0C6389126545FC7002421C1 /* Controller */,
 				B0C6387826543A85002421C1 /* Assets.xcassets */,
 				B0C6387A26543A85002421C1 /* LaunchScreen.storyboard */,
 				B0C6387D26543A85002421C1 /* Info.plist */,
 			);
 			path = CryptoTracker;
+			sourceTree = "<group>";
+		};
+		B0C6389026545F9D002421C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0C6388426543C18002421C1 /* Struct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0C6389126545FC7002421C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0C6387326543A81002421C1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B0C6389226545FE2002421C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0C6387526543A81002421C1 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C6387426543A81002421C1 /* ViewController.swift in Sources */,
+				B0C6388526543C18002421C1 /* Struct.swift in Sources */,
 				B0C6387026543A81002421C1 /* AppDelegate.swift in Sources */,
+				B0C6388D26544D2A002421C1 /* CryptoTableViewCell.swift in Sources */,
 				B0C6387226543A81002421C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +243,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -266,7 +298,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -288,6 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQM6RBYAX5;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = CryptoTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQM6RBYAX5;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = CryptoTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
